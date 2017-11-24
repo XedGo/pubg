@@ -1,0 +1,281 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ userid }} 战绩查询结果</title>
+    <meta name="keywords" content="绝地求生大逃杀战绩查询,绝地求生大逃杀战绩榜,绝地求生大逃杀查战绩,绝地求生大逃杀战绩在哪看,绝地求生大逃杀战绩记录,绝地求生大逃杀胜率查询,绝地求生大逃杀战绩胜率,绝地求生大逃杀战绩查询在线" />
+    <meta name="description" content="绝地求生大逃杀战绩查询,可中文查询你的绝地求生大逃杀战绩数据，输入你的游戏昵称，STEAM账号即可查询绝地求生大逃杀战绩。查看你的绝地求生大逃杀战绩数据，浏览绝地求生大逃杀排行榜，查找游戏数据！来看看你的数据是多少？" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="https://o464k4l96.qnssl.com/main.css"/>
+    <link rel="stylesheet" type="text/css" href="https://o464k4l96.qnssl.com/overview.css?1509586016"/>
+
+    
+</head>
+<body ms-controller="yexiao">
+
+<!--[if lte IE 9]>
+<h1 class="text-center bg-danger">您的浏览器太low啦，需要升级一下咯！</h1>
+<![endif]-->
+<style>
+    .ali-header-menu-box * {box-sizing: content-box;}
+    #ali213SSO .ali213SSO-online-avatar-username-link .ali213SSO-username {width: 65px;}
+    .t1c_l {width: 640px;}
+    .ali213SSOPopSheild .ali213SSOPopHolderNormal {box-sizing: content-box !important;}
+    #ali213SSO .ali213SSO-online-avatar-username-link .ali213SSO-online-avatar {vertical-align: inherit;}
+</style><style type="text/css">
+    .global {position: relative;width: 100%;background: url(/static/images/bg.jpg) center top fixed;}
+    .global-header {position: relative;width: 1180px;height: 170px;margin: 0 auto;overflow: hidden;}
+    .global-header > a {float: left;width: 377px;height: 62px;margin: 40px 0 0 40px;background: url(/static/images/but.png) 0 0 no-repeat;}
+    .global-header-r {position: relative;float: right;width: 732px;margin: 55px 30px 0 0;}
+    .inner-nav > a {float: left;padding: 13px 5px 0;font-size: 16px;color: #c0c7cc;margin-left: 43px;font-weight: bold;}
+    .inner-nav > a:hover {text-decoration: none;}
+    .global-header-r input {border: 0;outline: 0;padding: 0;}
+    .global-header-r .search {position: relative;float: right; width: 310px;height: 35px;line-height: 35px;padding-left: 110px;border-radius: 3px;outline: none;background: #3b4b5a;color: #ccc;font-size: 14px;margin-top: 6px;}
+    .global-header-r .submit {position: absolute;width: 30px;height: 30px;right: 8px;top: 9px;background: url(/static/images/but.png) 3px -65px no-repeat;cursor: pointer;}
+    .global-header-r > a {float: left;padding: 13px 5px 0;font-size: 16px;color: #c0c7cc;margin-left: 43px;}
+    .nmr {margin-right: 0 !important;}
+    .input-tab {position: absolute;width: 100px;height: 35px;line-height: 35px;top: 7px;right: 209px;overflow: hidden;transition: all .75s;text-indent: 7px;}
+    .input-tab.active {height: 105px;}
+    .input-tab li {font-size: 14px;list-style-type: none;color: #ccc;cursor: pointer;}
+    .input-tab::after {content: '';position: absolute;width: 15px;height: 15px;top: 11px;right: 5px;background: url(/static/images/but.png) -147px -70px;}
+    .inner-nav {float: right;margin-right: 30px;}
+    .layui-layer .layui-layer-loading1 {width: 90px;padding-top: 50px;}
+    .layui-layer .layui-layer-padding {color: #000;}
+    .input-groups {width: 100%;}
+    @media (max-width: 768px) {
+        .global-header {width: 100%;height: 240px;}
+        .inner-nav {height: 90px;}
+        .inner-nav > a {margin-left: 16px;}
+        .col-xs-10 {width: 92.333333%;}
+    }
+    @media (max-width: 414px) {
+        .global-header {}
+        .global-header-r > a {margin-left: 37px;}
+        .global-header > a {float: none;height: 90px;display: block;margin: 7px 0 0 0;background: url(http://pubg.ali213.net/images/logo_jdts.png) center center no-repeat; }
+        .global-header-r {float: none;width: 100%;}
+        .global-header-r {margin: 0;}
+        .inner-nav {margin-right: 0;width: 100%;background: rgba(0,0,0,.45);}
+    }
+    @media (max-width:768px) {
+	/*.inner-nav {height: 56px !important;}*/
+    .x-top .x-top-child {width: 100% !important;}
+	.details-cont {width:100% !important;clear:both;}
+	.dfsk .details-part {padding: 2rem 0 2rem 0 !important;}
+	.dfsk .details-part li {padding: 0.5rem !important;}
+	.dfsk .details-part li .details-part-item .k {font-size: 1.3rem !important;}
+	.dfsk .details-part li .details-part-item .v {font-size: 1.8rem !important;}
+
+}
+</style>
+<div class="container">
+
+    <div class="opc-bg">
+        <div class="player">
+            <img src={{ pubg_img }} alt="" width="75" height="75" class="character">
+            <div class="player-txt">
+               <span>{{ userid }}</span>
+                <p></p> 
+            </div>
+        </div>
+
+        <div class="typeBtns-cont">
+            <style>
+                .flex-box{display:-webkit-box;display:-ms-flexbox;display:flex;box-sizing: content-box;}
+                .vertical {-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;-moz-box-pack:center;-moz-box-align:center;-o-box-orient:horizontal;-o-box-pack:center;-o-box-align:center;-ms-box-orient:horizontal;-ms-box-pack:center;-ms-box-align:center;display:box;box-orient:horizontal;box-pack:center;box-align:center;align-items:center;-ms-flex-align:center;-webkit-align-items:center}
+
+                .details-cont {float: left;width: 100%;min-height: 260px;}
+                .leftDetials-cont {width: 100%;}
+
+                .public-tit font {font-size: 18px;}
+                ul,li {list-style: none;}
+                .x-top {}
+                .x-top .x-top-child {position: relative;float: left;width: 100%;background:url(/static/images/sydbj.png);}
+                .x-top .x-top-child:first-child {margin-right: 2%;}
+                .x-top .x-top-child::before {content: '全站公示';position: absolute;width: 4rem;height: 3.2rem;left: 5%;top: 50%;transform: translateY(-50%); color: #ffc000;font-size: 1.6rem;line-height: 1.6rem;text-align: center;letter-spacing: .4rem;}
+                .x-top .x-nowStats::before {content: '当前赛季';}
+                .x-top-child ul {padding-left: 16%;width: 84%;height: 6rem;}
+                .x-top-child ul li {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;text-align: center;}
+                .x-top-child ul li .k,.jqzj li .jqzj-l .k {color: #627188;font-size: 1.4rem;}
+                .x-top-child ul li .v,.jqzj li .jqzj-l .v {color: #fff;font-size: 2.3rem;font-weight: 700;}
+
+
+
+                .dfsk .details-part {padding: 2rem;}
+                .dfsk .details-part li {position: relative;float: left;text-align: center;width: 48%;background: #1e272c;list-style: none;padding: 1.5rem;}
+                .dfsk .details-part li:nth-of-type(odd) {margin-right: 4%;}
+                .dfsk .details-part li:nth-last-child(n+3) {margin-bottom: 2rem;}
+                .dfsk .details-part li .details-part-item {width: 50%;float: left;}
+                .dfsk .details-part li .details-part-item:first-child {border-right: 1px solid #333c41;}
+                .dfsk .details-part li .details-part-item .k {color: #627188;font-size: 1.4rem;line-height: 2rem;}
+                .dfsk .details-part li .details-part-item .v {color: #fff;font-size: 2.3rem;font-weight: 700;line-height: 3rem;}
+
+                .jqzj li,.history li {padding: 1.5rem 0;}
+                .jqzj li:nth-child(odd),.history li:nth-child(odd) {background: #090a0e;}
+                .jqzj li:nth-child(even),.history li:nth-child(even) {background: #0c0f14;}
+                .jqzj li .jqzj-l,.history li .jqzj-l {flex: 1;text-align: center;}
+                .jqzj li .jqzj-icon,.history li .jqzj-icon {flex: 2;text-align: left;white-space: nowrap;overflow: hidden;}
+                .jqzj li .jqzj-icon img,.history li .jqzj-icon img {width: 16%;margin-left: 8%;}
+                .jqzj li .jqzj-l .v,.history li .jqzj-l .v {font-size: 2rem;}
+                .jqzj li .jqzj-l .v.minus,.history li .jqzj-l .v.minus {color: #e23e3f;}
+
+                .select-conts {margin-top: 20px;}
+
+            </style>
+
+
+
+
+            <div class="x-top clearfix" style="margin: 5px;">
+                <div class="x-lifeStats x-top-child">
+                    <ul class="flex-box vertical">
+                    <span style="color:#fff">哦～ 我还没有想好写啥</span>
+					</ul>
+                </div>
+
+            </div> 
+            
+
+            <div class="items-bar clearfix">
+                <div class="details-cont current-item overview clearfix">
+                    <div class="leftDetials-cont">
+
+  <div class="square-box clearfix active">
+       <div class="public-tit">单排SOLO<font>(第五赛季)</font></div>
+       <div class="details-part clearfix">
+
+           <div class="l-pingfen"><em>RTING</em><p class="score">{{ pubg_solo_rting }}</p><i>排名：{{ pubg_solo_bestrank }}</i></div>
+            <div class="r-conts-part">
+            <div class="little-box-part"><em>吃鸡次数</em><p class="score">{{ pubg_solo_wins }}</p><em class="color-bar blue-color"></em></div>
+            <div class="little-box-part"><em>进前十次数</em><p class="score">{{ pubg_solo_top10 }}</p><em class="color-bar green-color"></em></div>
+            <div class="little-box-part"><em>K/D</em><p class="score">{{ pubg_solo_kda }}</p><em class="color-bar red-color"></em></div>
+            <div class="little-box-part"><em>当前赛季杀敌数</em><p class="score">{{ pubg_solo_kills }}</p><em class="color-bar yellow-color"></em></div>
+            <div class="little-box-part"><em>爆头击杀</em><p class="score">{{ pubg_solo_headshot }}</p><em class="color-bar gray-color"></em></div>
+            <div class="little-box-part"><em>最远击杀距离</em><p class="score">{{ pubg_solo_lang }}</p><em class="color-bar gr-color"></em></div>
+             <div class="little-box-part"><em>回合数</em><p class="score">{{ pubg_solo_rounds }}</p><em class="color-bar blue-color"></em></div>
+             <div class="little-box-part"><em>最高评分</em><p class="score">{{ pubg_solo_bestrting }}</p><em class="color-bar gray-color"></em></div>
+                     <div class="little-box-part"><em>场均输出</em><p class="score">{{ pubg_solo_dmg }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>助攻</em><p class="score">{{ pubg_solo_assists }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>自杀</em><p class="score">{{ pubg_solo_suicides }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>吃鸡率</em><p class="score">{{ pubg_solo_winb }}</p><em class="color-bar gray-color"></em>
+             </div></div></div></div></div>
+						
+
+
+<div class="square-box clearfix active">
+       <div class="public-tit">双排DUO<font>(第五赛季)</font></div>
+       <div class="details-part clearfix">
+
+          <div class="l-pingfen"><em>RTING</em><p class="score">{{ pubg_duo_rting }}</p><i>排名：{{ pubg_duo_bestrank }}</i></div>
+            <div class="r-conts-part">
+            <div class="little-box-part"><em>吃鸡次数</em><p class="score">{{ pubg_duo_wins }}</p><em class="color-bar blue-color"></em></div>
+            <div class="little-box-part"><em>进前十次数</em><p class="score">{{ pubg_duo_top10 }}</p><em class="color-bar green-color"></em></div>
+            <div class="little-box-part"><em>K/D</em><p class="score">{{ pubg_duo_kda }}</p><em class="color-bar red-color"></em></div>
+            <div class="little-box-part"><em>当前赛季杀敌数</em><p class="score">{{ pubg_duo_kills }}</p><em class="color-bar yellow-color"></em></div>
+            <div class="little-box-part"><em>爆头击杀</em><p class="score">{{ pubg_duo_headshot }}</p><em class="color-bar gray-color"></em></div>
+            <div class="little-box-part"><em>最远击杀距离</em><p class="score">{{ pubg_duo_lang }}</p><em class="color-bar gr-color"></em></div>
+             <div class="little-box-part"><em>回合数</em><p class="score">{{ pubg_duo_rounds }}</p><em class="color-bar blue-color"></em></div>
+             <div class="little-box-part"><em>最高评分</em><p class="score">{{ pubg_duo_bestrting }}</p><em class="color-bar gray-color"></em></div>
+                     <div class="little-box-part"><em>场均输出</em><p class="score">{{ pubg_duo_dmg }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>助攻</em><p class="score">{{ pubg_duo_assists }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>自杀</em><p class="score">{{ pubg_duo_suicides }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>吃鸡率</em><p class="score">{{ pubg_duo_winb }}</p><em class="color-bar gray-color"></em>
+             </div></div></div></div></div>
+
+
+<div class="square-box clearfix active">
+       <div class="public-tit">混排Squad<font>(第五赛季)</font></div>
+       <div class="details-part clearfix">
+
+       <div class="l-pingfen"><em>RTING</em><p class="score">{{ pubg_squad_rting }}</p><i>排名：{{ pubg_squad_bestrank }}</i></div>
+            <div class="r-conts-part">
+            <div class="little-box-part"><em>吃鸡次数</em><p class="score">{{ pubg_squad_wins }}</p><em class="color-bar blue-color"></em></div>
+            <div class="little-box-part"><em>进前十次数</em><p class="score">{{ pubg_squad_top10 }}</p><em class="color-bar green-color"></em></div>
+            <div class="little-box-part"><em>K/D</em><p class="score">{{ pubg_squad_kda }}</p><em class="color-bar red-color"></em></div>
+            <div class="little-box-part"><em>当前赛季杀敌数</em><p class="score">{{ pubg_squad_kills }}</p><em class="color-bar yellow-color"></em></div>
+            <div class="little-box-part"><em>爆头击杀</em><p class="score">{{ pubg_squad_headshot }}</p><em class="color-bar gray-color"></em></div>
+            <div class="little-box-part"><em>最远击杀距离</em><p class="score">{{ pubg_squad_lang }}</p><em class="color-bar gr-color"></em></div>
+             <div class="little-box-part"><em>回合数</em><p class="score">{{ pubg_squad_rounds }}</p><em class="color-bar blue-color"></em></div>
+             <div class="little-box-part"><em>最高评分</em><p class="score">{{ pubg_squad_bestrting }}</p><em class="color-bar gray-color"></em></div>
+                     <div class="little-box-part"><em>场均输出</em><p class="score">{{ pubg_squad_dmg }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>助攻</em><p class="score">{{ pubg_squad_assists }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>自杀</em><p class="score">{{ pubg_squad_suicides }}</p><em class="color-bar gray-color"></em></div>
+             <div class="little-box-part"><em>吃鸡率</em><p class="score">{{ pubg_squad_winb }}</p><em class="color-bar gray-color"></em>
+             </div></div></div></div></div>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="details-cont history clearfix">
+                </div>
+                <div class="details-cont clearfix">
+                    
+                    <div class="leftDetials-cont match-info">
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+<style>
+    .moblie-ad {display: none;position: fixed;z-index: 999;bottom: 0;left: 0;width: 100%;}
+    .moblie-ad > img {display: block;width: 100%;max-width: 600px;margin: 0 auto;}
+    footer {padding:40px 0;background: #161616;}
+    footer .foot-cont-item a {font-size:12px;color:#6a6767;display:block;padding-left:15px;margin-bottom:5px}
+    footer .foot-cont-item .about a {display:inline-block;font-size:12px;padding:0 5px}
+    footer .statement p {font-size:12px;text-align:center;color:#6a6767}
+    footer .foot-cont-item p a {width:auto;display:inline-block;padding:0;margin:0}
+    @media (max-width:767px) {
+        /*.hidden-xs {display:none!important}*/
+        .nav>li>a {padding:10px 15px;background:#131e39;filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8;}
+    }
+    @media (max-width: 600px) {
+        .moblie-ad {display: block;}
+    }
+</style>
+
+
+<div style="display: none">
+
+</div><div class="create">
+
+    <div class="gsh-sign"><img src=""><div class="gsh-close">X</div></div>
+</div>
+<div class="qztz">
+    <div class="qztz-inner">
+        <p>哎呀，数据搞丢了</p>
+        <a href="" class="tiaozhuan">强制刷新</a>
+        <a href="/">返回首页</a>
+    </div>
+</div>
+<style>
+    .qztz {display: none;position: fixed;z-index: 9999;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,.6);}
+    .qztz-inner {position: absolute;width: 260px;height: 130px;top: 50%;left: 50%;margin: -65px 0 0 -130px;}
+    .qztz-inner p {font-size: 18px;color: #fff;text-align: center;line-height: 40px;}
+    .qztz-inner a {float: left;width: 90px;height: 35px;line-height: 35px;border-radius: 5px; background: #fff;color: #000;font-size: 16px;margin: 20px 15px 0 20px;text-align: center;}
+    body {position: relative;}
+    .gsh-mode-zh {display: none;width: 100%;text-align: center;height: 30px;cursor: pointer;color: #00a2fd;}
+    .gsh-mode-zh.active {display: block;}
+    .gsh-mode-zh i {position: relative;display: inline-block;width: 10px;height: 10px;margin-right: 5px;border: 1px solid #00a2fd;}
+    .gsh-mode-zh i::before {position: absolute;content: '';width: 4px;height: 4px;background: #00a2fd;top: 2px;left: 2px;}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c4827987f68131e3d4f7676bcc421f05";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script type="text/javascript" src="https://o464k4l96.qnssl.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="https://o464k4l96.qnssl.com/jquery.masonry.min.js"></script>
+</body>
+</html>
+
